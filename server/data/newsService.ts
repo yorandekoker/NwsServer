@@ -9,7 +9,6 @@ export interface News {
   content: string;
   date: string; 
 }
-
 /**
  * Leest het JSON-bestand en geeft alle nieuwsartikelen terug.
  */
