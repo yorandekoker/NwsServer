@@ -1,5 +1,6 @@
 {
   "version": 2,
-  "builds": [{ "src": "/server/app.ts", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/server/app.ts" }]
+  "buildCommand": "npm run build",
+  "builds": [{ "src": "dist/server/app.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "dist/server/app.js" }]
 }
