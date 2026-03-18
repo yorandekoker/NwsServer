@@ -8,5 +8,5 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["server/**/*"]
+  "include": ["api", "routes.ts", "newsService.ts"]
 }
