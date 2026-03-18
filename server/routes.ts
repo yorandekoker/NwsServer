@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
 import path from "path";
-import { getNews, getNewsBySlug } from "./newsService";
+import {News } from "../services/newsService";
 
 const router = express.Router();
 
@@ -23,7 +23,7 @@ router.get("/", (req: Request, res: Response) => {
   </body>
   `;
 
-  news.forEach(article => {
+  news.forEach((article: News) => {
     html += `<li>
       <a href="/news/${article.slug}">
         ${article.title}
